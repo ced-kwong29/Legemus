@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/btn_star_big_on"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/challenges_text"
-        app:layout_constraintTop_toBottomOf="@+id/challenges_text" />
-
     <TextView
         android:id="@+id/featured_text"
         android:layout_width="wrap_content"
@@ -27,12 +17,14 @@
         app:layout_constraintTop_toBottomOf="@+id/discover_header" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="414dp"
         android:layout_height="98dp"
         app:layout_constraintBottom_toTopOf="@+id/featured_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discover_header">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,11 +33,10 @@
 
             <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="138dp"
+                android:layout_width="139dp"
                 android:layout_height="98dp"
                 android:layout_marginStart="20dp"
-                android:background="@drawable/blank"
-                android:src="@drawable/story_image_1"/>
+                android:src="@drawable/story1"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView10"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -54,13 +45,13 @@
                 android:layout_width="113dp"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="20dp"
-                android:src="@android:drawable/btn_star_big_on" />
+                android:src="@drawable/story2" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="125dp"
                 android:layout_height="match_parent"
-                android:src="@android:drawable/btn_star_big_on"
+                android:src="@drawable/story3"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView11"
@@ -71,7 +62,7 @@
                 android:layout_width="125dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@android:drawable/btn_star_big_on"
+                android:src="@drawable/story4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView11"
@@ -196,10 +187,22 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/btn_star_big_on"
+        android:src="@drawable/challenge"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/challenges_text"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/challenges_text" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="348dp"
+        android:layout_height="95dp"
+        android:src="@drawable/featured"
+        app:layout_constraintBottom_toTopOf="@+id/categories_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featured_text"
+        app:layout_constraintVertical_bias="0.545" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
