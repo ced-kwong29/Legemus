@@ -22,4 +22,17 @@
         android:name="com.example.legemus.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_learn"
+        android:name="com.example.legemus.ui.learn.LearnFragment"
+        android:label="@string/learn"
+        tools:layout="@layout/fragment_learn" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.legemus.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
 </navigation>
