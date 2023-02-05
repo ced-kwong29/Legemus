@@ -72,8 +72,8 @@
         android:background="@drawable/button_background"
         android:fontFamily="sans-serif-light"
         android:text="@string/math_and_science"
-        android:textColor="@android:color/white"
         android:textAllCaps="false"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/text_dashboard" />

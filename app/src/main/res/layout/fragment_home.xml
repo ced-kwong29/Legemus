@@ -20,56 +20,64 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872" />
+        app:layout_constraintVertical_bias="0.175" />
 
     <TextView
         android:id="@+id/liked_books"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="325dp"
+        android:layout_marginBottom="150dp"
         android:text="@string/likedBooks"
         app:layout_constraintBottom_toTopOf="@+id/recent_books"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/recent_books"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="325dp"
+        android:layout_marginBottom="150dp"
         android:text="@string/recentBooks"
         app:layout_constraintBottom_toTopOf="@+id/book_summaries"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/book_summaries"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="325dp"
+        android:layout_marginBottom="150dp"
         android:text="@string/bookSummaries"
         app:layout_constraintBottom_toTopOf="@+id/book_downloads"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/book_downloads"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="325dp"
+        android:layout_marginBottom="172dp"
         android:text="@string/bookDownloads"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="144dp"
         android:src="@drawable/baseline_access_time_24"
         app:layout_constraintBottom_toTopOf="@+id/imageView9"
         app:layout_constraintStart_toEndOf="@+id/recent_books" />
@@ -79,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="172dp"
         android:src="@drawable/baseline_download_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/book_downloads" />
@@ -89,22 +97,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="148dp"
         android:src="@drawable/baseline_thumb_up_24"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintStart_toEndOf="@+id/liked_books"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@+id/liked_books" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="115dp"
+        android:layout_marginBottom="144dp"
         android:src="@drawable/baseline_menu_24"
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintStart_toEndOf="@+id/book_summaries" />
+
+    <SearchView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
