@@ -15,4 +15,8 @@
     <string name="title_notifications">Notifications</string>
     <string name="learn">Learn</string>
     <string name="profile">Profile</string>
+    <string name="discover">Discover</string>
+    <string name="featured">Featured</string>
+    <string name="categories">Categories</string>
+    <string name="challenges">Challenges</string>
 </resources>
