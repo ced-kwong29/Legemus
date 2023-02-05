@@ -45,9 +45,10 @@
                 android:layout_height="98dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/blank"
-                android:src="@drawable/story_image_1"/>
+                android:src="@drawable/story_image_1"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"/>
+
 
             <ImageView
                 android:id="@+id/imageView5"

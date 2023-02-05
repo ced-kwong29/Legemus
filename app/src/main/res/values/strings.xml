@@ -28,4 +28,7 @@
     <string name="recentBooks">Recent</string>
     <string name="bookSummaries">Summaries</string>
     <string name="bookDownloads">Downloads</string>
+    <string name="friendsList">Friends</string>
+    <string name="groupsList">Groups</string>
+    <string name="discussionsList">Discussions</string>
 </resources>

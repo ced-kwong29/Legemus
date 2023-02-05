@@ -7,6 +7,6 @@
 
     <stroke
         android:width="15dp"
-        android:color="@color/verification_contact_background" />
+        android:color="@color/white" />
 
 </shape>
