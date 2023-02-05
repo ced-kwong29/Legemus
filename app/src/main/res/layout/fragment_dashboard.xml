@@ -22,7 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:src="@android:drawable/btn_star_big_on"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/discover_header" />
@@ -44,7 +43,6 @@
         android:layout_marginStart="20dp"
         android:src="@android:drawable/btn_star_big_on"
         app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -55,8 +53,7 @@
         android:src="@android:drawable/btn_star_big_on"
         app:layout_constraintBottom_toBottomOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toEndOf="@+id/textView4" />
+        app:layout_constraintHorizontal_bias="0.51" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -68,45 +65,59 @@
         app:layout_constraintStart_toEndOf="@+id/imageView11"
         app:layout_constraintTop_toBottomOf="@+id/challenges_text" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#8894A2"
-        android:backgroundTint="#8894A2"
-        android:text="Button"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/math_and_science"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/text_dashboard" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:text="Button"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/politics"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/challenges_text"
         app:layout_constraintEnd_toStartOf="@+id/challenges_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
-        android:text="Button"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/philosophy"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/challenges_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/challenges_text"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
-        android:text="Button"
+        android:background="@drawable/button_background"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/poetry"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/text_dashboard" />
@@ -138,16 +149,21 @@
         android:id="@+id/categories_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         android:text="@string/categories"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="@+id/text_dashboard"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/plays"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toTopOf="@+id/text_dashboard" />
