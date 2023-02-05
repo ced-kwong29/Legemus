@@ -19,6 +19,11 @@
     <string name="featured">Featured</string>
     <string name="categories">Categories</string>
     <string name="challenges">Challenges</string>
+    <string name="math_and_science"><![CDATA[Math & Science]]></string>
+    <string name="politics">Politics</string>
+    <string name="philosophy">Philosophy</string>
+    <string name="poetry">Poetry</string>
+    <string name="plays">Plays</string>
     <string name="likedBooks">Liked</string>
     <string name="recentBooks">Recent</string>
     <string name="bookSummaries">Summaries</string>
