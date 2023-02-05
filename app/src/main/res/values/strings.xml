@@ -19,4 +19,8 @@
     <string name="featured">Featured</string>
     <string name="categories">Categories</string>
     <string name="challenges">Challenges</string>
+    <string name="likedBooks">Liked</string>
+    <string name="recentBooks">Recent</string>
+    <string name="bookSummaries">Summaries</string>
+    <string name="bookDownloads">Downloads</string>
 </resources>
